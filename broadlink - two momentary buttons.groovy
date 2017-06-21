@@ -25,21 +25,21 @@ metadata {
 	tiles(scale: 2) {
 		multiAttributeTile(name: "main", type: "generic", width: 6, height: 4, canChangeIcon: true, canChangeBackground: true) {
 			tileAttribute("device.switch", key: "PRIMARY_CONTROL") {
-				attributeState "off", label: 'Turning OFF', action: "switch.on", backgroundColor: "#ffffff",icon: "https://raw.githubusercontent.com/MichaelStruck/SmartThingsPublic/master/devicetypes/michaelstruck/google-switch.src/GHH-Off.png", nextState: "undefined"
-				attributeState "on", label: 'Turning ON', backgroundColor: "#79b821",icon: "https://raw.githubusercontent.com/btrial/icons/master/on.png", nextState: "undefined"
-                attributeState "undefined", label: 'Push for ON', action: "switch.on", backgroundColor: "#ffffff",icon: "https://raw.githubusercontent.com/btrial/icons/master/on.png"
+				attributeState "off", label: 'Turning OFF', action: "switch.on", backgroundColor: "#ffffff", nextState: "undefined"
+				attributeState "on", label: 'Turning ON', backgroundColor: "#79b821"
+                attributeState "undefined", label: 'Push for ON', action: "switch.on", backgroundColor: "#ffffff"
 			}
         }
         multiAttributeTile(name: "on", type: "generic", width: 6, height: 4, canChangeIcon: true, canChangeBackground: true) {
 			tileAttribute("device.switchON", key: "PRIMARY_CONTROL") {
-				attributeState "off", label: '', action: "switch.on", backgroundColor: "#ffffff",icon: "https://raw.githubusercontent.com/btrial/icons/master/push-for-ON.png", nextState: "on"
-				attributeState "on", label: '', backgroundColor: "#79b821",icon: "https://raw.githubusercontent.com/btrial/icons/master/turning-ON.png"
+				attributeState "off", label: '', action: "switch.on", backgroundColor: "#ffffff",icon: "https://raw.githubusercontent.com/btrial/broadlink-smartthings/master/icons/push-for-ON.png", nextState: "on"
+				attributeState "on", label: '', backgroundColor: "#79b821",icon: "https://raw.githubusercontent.com/btrial/broadlink-smartthings/master/icons/turning-ON.png"
 			}
         }
         multiAttributeTile(name: "off", type: "generic", width: 6, height: 4, canChangeIcon: true, canChangeBackground: true) {
 			tileAttribute("device.switchOFF", key: "PRIMARY_CONTROL") {
-				attributeState "off", label: '', action: "switch.off", backgroundColor: "#ffffff",icon: "https://raw.githubusercontent.com/btrial/icons/master/push-for-OFF.png", nextState: "on"
-				attributeState "on", label: '', backgroundColor: "#F75454",icon: "https://raw.githubusercontent.com/btrial/icons/master/turning-off.png"
+				attributeState "off", label: '', action: "switch.off", backgroundColor: "#ffffff",icon: "https://raw.githubusercontent.com/btrial/broadlink-smartthings/master/icons/push-for-OFF.png", nextState: "on"
+				attributeState "on", label: '', backgroundColor: "#F75454",icon: "https://raw.githubusercontent.com/btrial/broadlink-smartthings/master/icons/turning-OFF.png"
 			}
         }
         main "main"
